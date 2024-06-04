@@ -6,6 +6,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --font-principal: "inter";
+    --botao-azul-efeito:#7bb4fa;
 }
 
 *{
@@ -17,7 +18,7 @@ body{
     background-color: var(--cor-de-fundo);
     color: var(--branco-prinncipal);
     font-family: var(--font-principal);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -25,6 +26,8 @@ body{
     background-image: url("/alura-plus/assets/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
 .container{
@@ -33,9 +36,17 @@ body{
     grid-template-columns: 50% 50%;
 }
 
+.container__caixa{
+    margin:0 6rem;
+}
+
 .container__titulo{
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
+}
+
+.container__imagen{
+    margin: 1rem 0 2rem 0;
 }
 
 .container__botao{  
@@ -45,6 +56,7 @@ body{
     color: var(--branco-prinncipal);
     display: block;
     text-decoration: none;
+    margin-bottom: 1rem;
 }
 
 .botao__secundario{
@@ -54,5 +66,91 @@ body{
 
 .container__aviso{
     color: var(--cinza-secunndario);
-    font-size: 12px;
+    font-size: 0.75rem;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10rem;
+}
+
+.secundario__imagen {
+    width: 80%;
+}
+
+.container__descricao{
+    padding: 2rem;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.1rem;
+}
+
+.descricao__texto{
+    color: var(--cinza-secunndario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5rem 0;
+}
+
+.dispositivos{
+   text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 3rem;
+    color: var(--branco-prinncipal);
+}
+
+.lista__item{
+    font-size: 2rem;
+    color: var(--branco-prinncipal);
+}
+
+.rodape{
+    text-align: center;
+    margin: 5rem 3rem;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.lista__links a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--branco-prinncipal);
+}
+
+.rodape__texto{
+    color: var(--cinza-secunndario);
+    font-size: 0.875rem;
+    margin: 1rem 0;
+}
+
+.lista__links a:hover{
+    color: var(--botao-azul);
+}
+
+.lista__links a:active{
+    color: purple;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
 }
